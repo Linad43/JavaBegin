@@ -3,11 +3,11 @@ public class Les2 {
     {
         int x = (int) (Math.random() * 100);
         int y = (int) (Math.random() * 100);
-        /*if (x % 2 == 0 && y % 2 == 0) {
-        System.out.println("Удачное совпадение");
-        }*/
         System.out.println("x = " + x + " y = " + y);
-        System.out.println((x % 2 == 0 && y % 2 == 0) ? ("Удачное совпадение") : (""));
+        if ((x % 2 == 0 && y % 2 == 0)||(x % 2 != 0 && y % 2 != 0)) {
+        System.out.println("Удачное совпадение");
+        }
+        System.out.println();
 
         int day = (int) (Math.round(Math.random() * 30 + 1));
         int decada = day / 10;
@@ -23,6 +23,10 @@ public class Les2 {
             }
             case 2: {
                 System.out.println("day попадает в третью декаду");
+                break;
+            }
+            case 3: {
+                System.out.println("day попадает в четвертую декаду");
                 break;
             }
             default:
